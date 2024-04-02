@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --primary-color:#070F2B;
+}
+
+body {
+    height:100%;
+    width:100%;
+
+    box-sizing: border-box;
+    background-image: url(../assets/8ae6b2183817511.65468f179e599.png);
+    background-color:var(--primary-color);  
+    
+}
+
+.cabecalho{
+    padding: 3% 0 0 0;
+}
+
+.container {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 4% 5% 0 10% ;   
+}
+
+.campo__entrada{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo__entrada__texto{
+    width: 130%;
+    height: 31.25rem;
+    resize: none;
+    box-shadow: none;
+    border: #535C91 solid 2px;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    background-color: #9290C3; 
+    border-radius: 2rem ;
+}
+
+.campo__entrada__texto::placeholder{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    padding: 0% 0 0 0 ;
+    background-image: url(../assets/8ae6b2183817511.65468f179e599.png);
+   
+}
+
+
+
+.aviso {
+    display: flex;
+    color:#65747D;
+    font-weight: 600;
+    gap: 1%;
+}
+
+.botoes {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5% 0% 0 20%;
+    gap: 10%;
+
+}
+
+.botoes__decodificador{
+    height: 4.1875rem;
+    width: 20.5rem;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: #535C91;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.botoes__decodificador:hover{
+    background-color: #9290C3;
+    cursor: pointer;
+
+}
+
+
+.campo__saida__texto{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 81%;
+    resize: none;
+    border: #535C91 solid 2px;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    background-color: #9290C3;
+}
+.campo__saida__texto::placeholder{
+    border:none;
+    color: var(--primary-color);
+    width:100%;
+    height: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    background-image:url(../jujutsu.gif.gif);
+}
+
+
+.botao__copia {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+.botao__copiar {
+    font-size: 1.5rem;
+    height: 4.1875rem;
+    width: 20.5rem;
+    border-radius: 1.5rem;
+    background-color: #535C91;
+    border: none;
+    color: var(--primary-color);
+}
+
+.botao__copiar:hover {
+    background-color: #9290C3;
+    cursor: pointer;
+
+}
+
+@media(max-width:1200px){
+
+    .container{
+        margin: 0 8% 0 8%;
+        padding: 0% 20% 15% 8%;
+        gap: 20%;
+        flex-direction: column;
+    }
+
+    .campo__entrada{
+        width: auto;
+        
+    }
+
+    .aviso{width: 25rem;}
+
+ 
+    .campo__saida{
+        padding: 10% 0 0 0%;
+        width: 133%;
+        height:594px;
+    }
+
+}

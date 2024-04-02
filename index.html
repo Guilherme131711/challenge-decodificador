@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="apresentacao">
+
+    <header class="cabecalho">
+        <img src="./assets/Frame 6.png" alt="logo alura">
+
+    </header>
+
+    <main class="container">    
+
+
+        <section class="campo__entrada">
+
+            <textarea placeholder="digite seu texto" class="campo__entrada__texto" id="input"></textarea>
+
+            <div class="aviso">
+                <img src="./assets/exclamacao-x1.png" class="img__aviso" alt="logo-aviso"> 
+                <label for=""input-texto>  apenas letras minúscula e sem acentuação !</label>
+            </div>
+
+            <div class="botoes">
+                
+                <button type="button" onclick="criptografar()" class="botoes__decodificador" id="btn__criptografar">
+                    Criptografar
+                </button>
+
+                <button type="button" onclick="descriptografar()" class="botoes__decodificador" id="171717">
+                    descriptografar
+                </button>
+            </div>
+
+        </section>
+
+        <section class="campo__saida">
+
+            <textarea placeholder=  "nenhuma mensagem encontrada"class="campo__saida__texto" id="output"></textarea>
+
+            <div class="botao__copia">
+                <button type="button" onclick="copiar()" class="botao__copiar" id="copiar">copiar</button>
+            </div> 
+
+        </section>
+
+    
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
